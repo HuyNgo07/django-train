@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,10 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu</title>
 </head>
-<body>
+<body>-->
 <!-- Add heading code -->
-<h1 style="color: #495E57"> Menu </h1>
+<!-- <h1 style="color: #495E57"> Menu </h1> -->
 <!-- Add paragraph code -->
+{% extends 'base.html'%}
+{% block content%}
+<h1> Menu</h1>
+
 {%if menu%}
 <ul>
     {% for item in menu%}
@@ -19,5 +23,6 @@
 {%else%}
 <p>No items to display</p>
 {%endif%}
-</body>
-</html>
+{% endblock %}
+<!-- </body>
+</html> -->

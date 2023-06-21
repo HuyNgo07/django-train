@@ -7,7 +7,7 @@ from .models import Menu
 
 
 def home(request):
-    return HttpResponse("<h1> Welcome to Little Lemon! </h1>")
+    return render(request, "index.html")
 
 
 def drinks(request, drink_name):
@@ -26,7 +26,7 @@ def about(request):
 
 
 def book(request):
-    return HttpResponse("<h1> Book </h1>")
+    return render(request, "book.html")
 
 
 def menu(request):
